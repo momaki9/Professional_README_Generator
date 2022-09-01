@@ -62,4 +62,5 @@ If your README is long, add a table of contents to make it easy for users to fin
 `;
 }
 
-module.exports = generateMarkdown;
+// module.exports is an object we use to store variables or methods
+module.exports = {generateMarkdown};
