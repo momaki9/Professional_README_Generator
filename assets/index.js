@@ -7,33 +7,49 @@ const markdown = require('./utils/generateMarkdown.js');
 const questions = [
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'title',
+      message: 'What is the title of your project?',
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'description',
+      message: 'In a few sentences, describe this project.',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'install',
+      message: 'Describe how to install/depoly the application in this project.',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'usage',
+      message: 'Provide instructions on how to use the application.',
+    },
+    {
+      type: 'list',
+      name: 'license',
+      message: 'Select a badge for your project (use arrow keys and enter to select):',
+      choices: ["Apache 2.0", "Boost", "Eclipse", "IBM", "ISC", "Mozilla", "skip the badge for now"]
+    },
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'If you created an application and would like other developers to contribute it, please describe the guidelines for how to do so.',
+    },
+    {
+      type: 'input',
+      name: 'tests',
+      message: 'If you wrote tests for your application, please describe how to run them.',
     },
     {
       type: 'input',
       name: 'github',
-      message: 'Enter your GitHub Username',
+      message: 'Please enter your GitHub Username.',
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'email',
+      message: 'Please enter your email address.',
     },
 ];
 
