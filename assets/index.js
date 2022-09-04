@@ -28,8 +28,8 @@ const questions = [
     {
       type: 'list',
       name: 'license',
-      message: 'Select a badge for your project (use arrow keys and enter to select):',
-      choices: ["Apache 2.0", "Boost", "Eclipse", "IBM", "ISC", "Mozilla", "skip the badge for now"]
+      message: 'Select a license for your project. (Use arrow keys and enter to select.)',
+      choices: ["Apache 2.0", "Boost", "Eclipse", "IBM", "ISC", "Mozilla", "Unlicense"]
     },
     {
       type: 'input',
@@ -60,7 +60,7 @@ inquirer.prompt(questions)
     writeToFile();
     function writeToFile(fileName, data) {
       data = markdown.generateMarkdown(answers);
-      fileName = "TESTING_README_TESTING.md"
+      fileName = "ReadME.md"
       fs.writeFile(fileName, data, (err) =>
         err ? console.log(err) : console.log('Your README.md file has been successfully created!')
       );
