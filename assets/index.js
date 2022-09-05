@@ -18,7 +18,7 @@ const questions = [
     {
       type: 'input',
       name: 'install',
-      message: 'Describe how to install/depoly the application in this project.',
+      message: 'Describe how to install/deploy the application in this project.',
     },
     {
       type: 'input',
@@ -34,7 +34,7 @@ const questions = [
     {
       type: 'input',
       name: 'contribution',
-      message: 'If you created an application and would like other developers to contribute it, please describe the guidelines for how to do so.',
+      message: 'If you would like other developers to contribute to your project, please describe the guidelines for how to do so.',
     },
     {
       type: 'input',

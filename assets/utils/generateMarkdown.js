@@ -36,33 +36,33 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
   if (data.license === 'Apache 2.0') {
-    return link + 'This application is covered under the Apache 2.0 License';
+    return 'This application is covered under the Apache 2.0 License';
   } 
   if (data.license === "Boost") {
-    return link + 'This application is covered under the Boost Software License 1.0';
+    return 'This application is covered under the Boost Software License 1.0';
   } 
   if (data.license === "Eclipse") {
-    return link + 'This application is covered under the Eclipse Public License 1.0';
+    return 'This application is covered under the Eclipse Public License 1.0';
   } 
   if (data.license === "IBM") {
-    return link + 'This application is covered under the IBM Public License Version 1.0';
+    return 'This application is covered under the IBM Public License Version 1.0';
   } 
   if (data.license === "ISC") {
-    return link + 'This application is covered under the ISC License (ISC)';
+    return 'This application is covered under the ISC License (ISC)';
   } 
   if (data.license === "Mozilla") {
-    return link + 'This application is covered under the Mozilla Public License 2.0';
+    return 'This application is covered under the Mozilla Public License 2.0';
 
   } 
   if (data.license === "Unlicense") {
-    return link + 'This application is unlicensed';
+    return 'This application is unlicensed';
   } 
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-#Project Title: ${data.title}
+# Project Title: ${data.title}
 
 ## Project Description: ${data.description}
 ## ${renderLicense(data)}
@@ -98,6 +98,9 @@ ${data.tests}
 
 ---
 ## Questions
+
+If you have any questions, please visit my GitHub or send me an email.
+
 [GitHub Link](https://github.com/${data.github})
 
 [Email Me!](mailto:${data.email})
