@@ -2,7 +2,7 @@
 # Project Title: ReadMe Generator
 
 ## Project Description: In this project, a user can generate a high quality readme using command-line application
-## [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+## [![License](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Table of Contents
   - [Installation](#installation)
@@ -17,17 +17,17 @@
 
 A user can clone the files found in this repo then install the inquirer node package
 
-## ![Screenshot](../assets/screenshot/node_ss.png)
+## ![Screenshot](./assets/screenshot/node_ss.png)
 
 ## Usage
 
 In terminal, navigate to the folder and then run the node index.js command. Refer to the walkthrough video linked below
 
-## ![Walkthrough Video](../assets/video/Walkthrough.mp4)
+[Walkthrough Video](https://drive.google.com/file/d/119B1AsTTuFSjHtBKqQZZTxIK39uq7rOw/view?usp=sharing)
 
 ## License
 
-This application is covered under the Boost Software License 1.0
+This application is unlicensed
 
 ## Contributing
 
