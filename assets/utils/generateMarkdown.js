@@ -1,8 +1,7 @@
 
 const link = "[![License](https://img.shields.io/badge/";
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// function that returns a license badge based on which license is selected
 function renderLicense(data) {
   if (data.license === 'Apache 2.0') {
     return link + 'License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
@@ -28,12 +27,9 @@ function renderLicense(data) {
   } 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// function to display license info in the readme based on license selected
 function renderLicenseSection(data) {
   if (data.license === 'Apache 2.0') {
     return 'This application is covered under the Apache 2.0 License';
@@ -59,7 +55,7 @@ function renderLicenseSection(data) {
   } 
 }
 
-// TODO: Create a function to generate markdown for README
+//function to generate markdown for README file
 function generateMarkdown(data) {
   return `
 # Project Title: ${data.title}
@@ -108,7 +104,7 @@ If you have any questions, please visit my GitHub or send me an email.
 ;
 }
 
-// module.exports is an object we use to store variables or methods
+//exports these functions to be used by index.js file
 module.exports = {
   generateMarkdown,
   renderLicense,
